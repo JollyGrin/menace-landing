@@ -1,4 +1,6 @@
 <script lang="ts">
+	import BgGrid from '$lib/BG_Grid.svelte';
+	import HeroTiltCard from '$lib/HeroTiltCard.svelte';
 	import Quote from '$lib/Quote.svelte';
 	import MarqueeSection from './MarqueeSection.svelte';
 </script>
@@ -53,6 +55,23 @@
 			{/each}
 		</div>
 	</div>
+</div>
+
+<div class="relative mt-10 min-h-[60vh]">
+	<div
+		class="text-brand-primary absolute left-1/4 z-10 container grid h-full w-fit place-items-center text-4xl font-bold"
+	>
+		<div class="flex w-fit flex-col gap-3">
+			<h1>The Team</h1>
+			<div class="flex gap-1">
+				<div class="text-lg font-normal">
+					<HeroTiltCard src="/tregs.jpg" title="treggs" />
+					<p>Treggs, CEO</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<BgGrid />
 </div>
 
 <style>
