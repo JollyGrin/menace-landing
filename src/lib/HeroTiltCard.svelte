@@ -26,5 +26,5 @@
 	alt={title}
 	{title}
 	{src}
-	class="my-3 w-24 rounded-xl shadow-md transition-all duration-500 select-none hover:shadow-amber-200/10 hover:saturate-150 focus:scale-110 active:scale-110 md:w-30"
+	class="my-3 w-24 rounded-xl shadow-md transition-all duration-500 select-none hover:scale-110 hover:shadow-amber-200/10 hover:saturate-150 active:scale-110 md:w-30"
 />
