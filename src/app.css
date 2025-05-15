@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+@theme {
+	--color-brand-primary: #fff;
+	--color-brand-secondary: #1e1e1e;
+	--color-brand-highlight: #008ece;
+	--color-brand-shadow: #fff;
+}
+
+html,
+body {
+	background-color: var(--color-brand-secondary);
+}
