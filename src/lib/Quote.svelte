@@ -50,7 +50,7 @@
 		width: 60px;
 		height: 60px;
 		bottom: -60px;
-		left: 50px;
+		left: 49px;
 		border-bottom: none;
 		border-left: none;
 		z-index: 3;
