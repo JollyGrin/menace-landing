@@ -4,10 +4,11 @@
 	import { rainbowConfig } from './shaders/rainbow_glsl';
 	import { DoubleSide, ShaderMaterial } from 'three';
 	import { OrbitControls } from '@threlte/extras';
+	import { cloudConfig } from './shaders/clouds_glsl';
 
 	let shaderMaterial: ShaderMaterial = $state(
 		new ShaderMaterial({
-			...rainbowConfig,
+			...cloudConfig,
 			side: DoubleSide
 		})
 	);
