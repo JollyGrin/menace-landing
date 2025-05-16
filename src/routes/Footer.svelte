@@ -5,7 +5,10 @@
 	import HeroTiltCard from '$lib/HeroTiltCard.svelte';
 </script>
 
-<div class="relative container mx-auto mt-16 flex min-h-[54vh] justify-center">
+<div class=" relative mx-auto mt-16 flex min-h-[54vh] justify-center">
+	<div
+		class="to-brand-secondary via-brand-secondary absolute top-22 h-[54vh] w-full bg-gradient-to-t from-black"
+	></div>
 	<div
 		class="text-brand-primary absolute z-10 container grid h-full w-fit place-items-center text-4xl font-bold"
 	>
