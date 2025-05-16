@@ -60,7 +60,7 @@
 		content: '';
 		position: absolute;
 		width: 80px;
-		border: 6px solid var(--color-brand-secondary);
+		border: 6px solid black;
 		bottom: -3px;
 		left: 50px;
 		z-index: 2;

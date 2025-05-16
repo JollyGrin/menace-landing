@@ -3,56 +3,58 @@
 	import Footer from './Footer.svelte';
 </script>
 
-<div class="container mx-auto">
+<div class="relative mx-auto bg-black pb-10">
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
 </div>
 
-<div
-	class="text-brand-primary group relative isolate container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-2xl md:py-16"
->
-	<div class="absolute top-1/4 left-1/4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
-	<div class="absolute right-30 bottom-24 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
-	<img
-		src="/moneylego.png"
-		alt="money lego"
-		class="animate-float blue-tint absolute top-0 right-0 z-0 transition-all group-hover:translate-[-2rem]"
-	/>
-	<div class="relative z-10">
-		<h1 class="text-6xl font-thin">Seedplex</h1>
-		<p class="w-fit rounded-full px-1 backdrop-blur-sm">
-			Tokenizing the creation of private securities turns them into
-			<span class="font-bold">“money legos”</span>
-		</p>
+<div class="flex flex-col xl:flex-row">
+	<div
+		class="text-brand-primary group relative isolate container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-xl md:py-16"
+	>
+		<div class="absolute top-1/4 left-1/4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
+		<div class="absolute right-30 bottom-24 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
+		<img
+			src="/moneylego.png"
+			alt="money lego"
+			class="animate-float blue-tint absolute top-0 right-0 z-0 transition-all group-hover:translate-[-2rem]"
+		/>
+		<div class="relative z-10">
+			<h1 class="text-brand-highlight text-6xl">Seedplex</h1>
+			<p class="w-fit rounded-full px-1 backdrop-blur-sm">
+				Tokenizing the creation of private securities turns them into
+				<span class="">“money legos”</span>
+			</p>
 
-		<p class="mt-6">Types of Securities:</p>
-		<div class="mt-2 flex flex-wrap gap-2 text-lg">
-			{#each ['pre seed', 'seed equity', 'tranched debt', 'convertible debt'] as seed (seed)}
-				<div class="rounded-xl bg-black px-4 py-[4px]">{seed}</div>
-			{/each}
+			<p class="mt-6">Types of Securities:</p>
+			<div class="mt-2 flex flex-wrap gap-2">
+				{#each ['pre seed', 'seed equity', 'tranched debt', 'convertible debt'] as seed (seed)}
+					<div class="rounded-xl bg-black px-4 py-[4px]">{seed}</div>
+				{/each}
+			</div>
 		</div>
 	</div>
-</div>
 
-<div
-	class="text-brand-primary group relative container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-2xl md:py-16"
->
-	<div class="absolute top-1/4 right-1/4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
-	<div class="absolute bottom-24 left-30 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
-	<img
-		src="/case.png"
-		alt="money lego"
-		class="animate-float blue-tint absolute top-20 right-0 z-0 w-[220px] transition-all group-hover:translate-[-2rem] md:w-[250px]"
-	/>
-	<div class="relative z-10">
-		<h1 class="text-6xl font-thin">Blockmarkets</h1>
+	<div
+		class="text-brand-primary group relative isolate container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-xl md:py-16"
+	>
+		<div class="absolute top-1/4 right-1/4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
+		<div class="absolute bottom-24 left-30 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
+		<img
+			src="/case.png"
+			alt="money lego"
+			class="animate-float blue-tint absolute top-20 right-0 z-0 w-[220px] transition-all group-hover:translate-[-2rem] md:w-[250px]"
+		/>
+		<div class="relative z-10">
+			<h1 class="text-brand-highlight text-6xl font-bold">Blockmarkets</h1>
 
-		<p class="w-fit rounded-full px-1 backdrop-blur-sm">Financial integrations for all tokens.</p>
-		<p class="mt-6">Styles of trading available</p>
-		<div class="mt-2 flex flex-wrap gap-2 text-lg">
-			{#each ['OTC', 'DCA', 'Borrow/Lend', 'Proprietary Algorithmic'] as seed (seed)}
-				<div class="rounded-xl bg-black px-4 py-[4px]">{seed}</div>
-			{/each}
+			<p class="w-fit rounded-full px-1 backdrop-blur-sm">Financial integrations for all tokens.</p>
+			<p class="mt-6">Styles of trading available</p>
+			<div class="mt-2 flex flex-wrap gap-2">
+				{#each ['OTC', 'DCA', 'Borrow/Lend', 'Proprietary Algorithmic'] as seed (seed)}
+					<div class="rounded-xl bg-black px-4 py-[4px]">{seed}</div>
+				{/each}
+			</div>
 		</div>
 	</div>
 </div>
