@@ -90,7 +90,7 @@
 
 <style>
 	img.blue-tint {
-		filter: grayscale(100%) sepia(100%) hue-rotate(200deg) saturate(120%);
+		filter: grayscale(100%) sepia(100%) hue-rotate(200deg) saturate(150%);
 	}
 	@keyframes float {
 		0% {
