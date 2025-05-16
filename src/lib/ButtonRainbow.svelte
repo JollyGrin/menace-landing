@@ -15,7 +15,8 @@
 		'rounded-sm outline-none focus-visible:ring-[3px]',
 		'text-sm font-medium whitespace-nowrap',
 		'disabled:pointer-events-none disabled:opacity-50',
-		'[&_svg]:pointer-events-none [&_svg:not([class*="size-"])]:size-4 [&_svg]:shrink-0'
+		'[&_svg]:pointer-events-none [&_svg:not([class*="size-"])]:size-4 [&_svg]:shrink-0',
+		'hover:saturate-300 hover:scale-105 active:scale-100 transition-all saturate-100'
 	];
 
 	const variantClasses = {
@@ -70,7 +71,10 @@
 		--color-3: hsl(210 100% 63%);
 		--color-4: hsl(195 100% 63%);
 		--color-5: hsl(90 100% 63%);
-		--animate-rainbow: rainbow var(--speed, 2s) infinite linear;
+	}
+
+	.animate-rainbow {
+		animation: rainbow 2s infinite linear;
 	}
 
 	@keyframes rainbow {
