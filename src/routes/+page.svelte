@@ -1,9 +1,15 @@
 <script lang="ts">
 	import BgGrid from '$lib/BG_Grid.svelte';
+	import ButtonRainbow from '$lib/ButtonRainbow.svelte';
 	import HeroTiltCard from '$lib/HeroTiltCard.svelte';
 	import Quote from '$lib/Quote.svelte';
-	import MarqueeSection from './MarqueeSection.svelte';
 </script>
+
+<div class="bg-white p-2">
+	<ButtonRainbow>
+		<span>Hello there</span>
+	</ButtonRainbow>
+</div>
 
 <div class="container mx-auto">
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
