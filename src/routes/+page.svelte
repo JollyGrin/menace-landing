@@ -5,12 +5,6 @@
 	import Quote from '$lib/Quote.svelte';
 </script>
 
-<div class="bg-white p-2">
-	<ButtonRainbow>
-		<span>Hello there</span>
-	</ButtonRainbow>
-</div>
-
 <div class="container mx-auto">
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
@@ -21,7 +15,11 @@
 >
 	<div class="absolute top-1/4 left-1/4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
 	<div class="absolute right-30 bottom-24 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
-	<img src="/moneylego.png" alt="money lego" class="animate-float absolute top-0 right-0 z-0" />
+	<img
+		src="/moneylego.png"
+		alt="money lego"
+		class="animate-float blue-tint absolute top-0 right-0 z-0"
+	/>
 	<div class="relative z-10">
 		<h1 class="text-6xl font-thin">Seedplex</h1>
 		<p class="w-fit rounded-full px-1 backdrop-blur-sm">
@@ -46,7 +44,7 @@
 	<img
 		src="/case.png"
 		alt="money lego"
-		class="animate-float absolute top-20 right-0 z-0 w-[220px] md:w-[250px]"
+		class="animate-float blue-tint absolute top-20 right-0 z-0 w-[220px] md:w-[250px]"
 	/>
 	<div class="relative z-10">
 		<h1 class="text-6xl font-thin">Blockmarkets</h1>
@@ -66,7 +64,9 @@
 		class="text-brand-primary absolute z-10 container grid h-full w-fit place-items-center text-4xl font-bold"
 	>
 		<div class="flex h-fit w-fit flex-col gap-3">
-			<h1>The Team</h1>
+			<div class="flex flex-col gap-2">
+				<h1>The Team</h1>
+			</div>
 			<div class="flex gap-4 md:gap-10">
 				<div class="text-lg font-normal">
 					<HeroTiltCard src="/tregs.jpg" title="treggs" hideTitle />
@@ -78,6 +78,8 @@
 					<p>SpacemanDev, CTO</p>
 				</div>
 			</div>
+
+			<ButtonRainbow>Get in touch</ButtonRainbow>
 		</div>
 	</div>
 	<BgGrid />
@@ -87,6 +89,9 @@
 <!-- <MarqueeSection /> -->
 
 <style>
+	img.blue-tint {
+		filter: grayscale(100%) sepia(100%) hue-rotate(200deg) saturate(120%);
+	}
 	@keyframes float {
 		0% {
 			transform: translateY(0) translateX(0);
