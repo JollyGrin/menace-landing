@@ -8,8 +8,6 @@
 <div class="container mx-auto">
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
-	<div class="h-4"></div>
-	<MarqueeSection />
 </div>
 
 <div
@@ -57,20 +55,20 @@
 	</div>
 </div>
 
-<div class="relative mt-10 min-h-[60vh]">
+<div class="relative container mx-auto mt-16 flex min-h-[54vh] justify-center">
 	<div
-		class="text-brand-primary absolute left-1/4 z-10 container grid h-full w-fit place-items-center text-4xl font-bold"
+		class="text-brand-primary absolute z-10 container grid h-full w-fit place-items-center text-4xl font-bold"
 	>
 		<div class="flex h-fit w-fit flex-col gap-3">
 			<h1>The Team</h1>
 			<div class="flex gap-4 md:gap-10">
 				<div class="text-lg font-normal">
-					<HeroTiltCard src="/tregs.jpg" title="treggs" />
+					<HeroTiltCard src="/tregs.jpg" title="treggs" hideTitle />
 					<p>Treggs, CEO</p>
 				</div>
 
 				<div class="text-lg font-normal">
-					<HeroTiltCard src="/spaceman.jpg" title="treggs" />
+					<HeroTiltCard src="/spaceman.jpg" title="treggs" hideTitle />
 					<p>SpacemanDev, CTO</p>
 				</div>
 			</div>
@@ -78,6 +76,9 @@
 	</div>
 	<BgGrid />
 </div>
+
+<!-- <div class="h-4"></div> -->
+<!-- <MarqueeSection /> -->
 
 <style>
 	@keyframes float {

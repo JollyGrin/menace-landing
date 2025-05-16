@@ -4,8 +4,9 @@
 
 	let {
 		src = '/people/George_Washington.png',
-		title = 'George Washington'
-	}: { src: string; title: string } = $props();
+		title = 'George Washington',
+		hideTitle = false
+	}: { src: string; title: string; hideTitle: boolean } = $props();
 
 	let tiltRef: HTMLElement | null = $state(null);
 	onMount(() => {
@@ -24,7 +25,7 @@
 <img
 	bind:this={tiltRef}
 	alt={title}
-	{title}
+	title={!hideTitle ? title : undefined}
 	{src}
 	class="my-3 w-24 rounded-xl shadow-md transition-all duration-500 select-none hover:scale-110 hover:shadow-amber-200/10 hover:saturate-150 active:scale-110 md:w-30"
 />

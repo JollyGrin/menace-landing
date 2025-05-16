@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let width: number = 40;
-	export let height: number = 40;
+	export let width: number = 60;
+	export let height: number = 60;
 	export let squares: [number, number] = [24, 24];
 	export let className: string = '';
 	export let squaresClassName: string = '';
