@@ -61,12 +61,17 @@
 	<div
 		class="text-brand-primary absolute left-1/4 z-10 container grid h-full w-fit place-items-center text-4xl font-bold"
 	>
-		<div class="flex w-fit flex-col gap-3">
+		<div class="flex h-fit w-fit flex-col gap-3">
 			<h1>The Team</h1>
-			<div class="flex gap-1">
+			<div class="flex gap-4 md:gap-10">
 				<div class="text-lg font-normal">
 					<HeroTiltCard src="/tregs.jpg" title="treggs" />
 					<p>Treggs, CEO</p>
+				</div>
+
+				<div class="text-lg font-normal">
+					<HeroTiltCard src="/spaceman.jpg" title="treggs" />
+					<p>SpacemanDev, CTO</p>
 				</div>
 			</div>
 		</div>
