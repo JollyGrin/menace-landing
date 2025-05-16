@@ -1,0 +1,32 @@
+<script>
+	import BgGrid from '$lib/BG_Grid.svelte';
+	import ButtonRainbow from '$lib/ButtonRainbow.svelte';
+
+	import HeroTiltCard from '$lib/HeroTiltCard.svelte';
+</script>
+
+<div class="relative container mx-auto mt-16 flex min-h-[54vh] justify-center">
+	<div
+		class="text-brand-primary absolute z-10 container grid h-full w-fit place-items-center text-4xl font-bold"
+	>
+		<div class="flex h-fit w-fit flex-col gap-3">
+			<div class="flex flex-col gap-2">
+				<h1>The Team</h1>
+			</div>
+			<div class="flex gap-4 md:gap-10">
+				<div class="text-lg font-normal">
+					<HeroTiltCard src="/tregs.jpg" title="treggs" hideTitle />
+					<p>Treggs, CEO</p>
+				</div>
+
+				<div class="text-lg font-normal">
+					<HeroTiltCard src="/spaceman.jpg" title="treggs" hideTitle />
+					<p>SpacemanDev, CTO</p>
+				</div>
+			</div>
+
+			<ButtonRainbow>Get in touch</ButtonRainbow>
+		</div>
+	</div>
+	<BgGrid />
+</div>
