@@ -11,14 +11,14 @@
 </div>
 
 <div
-	class="text-brand-primary relative isolate container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-2xl md:py-16"
+	class="text-brand-primary group relative isolate container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-2xl md:py-16"
 >
 	<div class="absolute top-1/4 left-1/4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
 	<div class="absolute right-30 bottom-24 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
 	<img
 		src="/moneylego.png"
 		alt="money lego"
-		class="animate-float blue-tint absolute top-0 right-0 z-0"
+		class="animate-float blue-tint absolute top-0 right-0 z-0 transition-all group-hover:translate-[-2rem]"
 	/>
 	<div class="relative z-10">
 		<h1 class="text-6xl font-thin">Seedplex</h1>
@@ -37,14 +37,14 @@
 </div>
 
 <div
-	class="text-brand-primary relative container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-2xl md:py-16"
+	class="text-brand-primary group relative container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-2xl md:py-16"
 >
 	<div class="absolute top-1/4 right-1/4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
 	<div class="absolute bottom-24 left-30 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
 	<img
 		src="/case.png"
 		alt="money lego"
-		class="animate-float blue-tint absolute top-20 right-0 z-0 w-[220px] md:w-[250px]"
+		class="animate-float blue-tint absolute top-20 right-0 z-0 w-[220px] transition-all group-hover:translate-[-2rem] md:w-[250px]"
 	/>
 	<div class="relative z-10">
 		<h1 class="text-6xl font-thin">Blockmarkets</h1>
