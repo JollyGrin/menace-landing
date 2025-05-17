@@ -12,7 +12,7 @@
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
 
-	<div class="absolute bottom-0 h-[50vh] w-full">
+	<div class="absolute bottom-0 h-[65vh] w-full">
 		<BackdropCanvas />
 	</div>
 </div>
