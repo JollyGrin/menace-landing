@@ -1,43 +1,38 @@
 <script>
-	import BgGrid from '$lib/BG_Grid.svelte';
-	import ButtonRainbow from '$lib/ButtonRainbow.svelte';
-
-	import HeroTiltCard from '$lib/HeroTiltCard.svelte';
 	import IconMail from '$lib/icon/IconMail.svelte';
 </script>
 
-<div class=" relative z-10 mx-auto mt-16 flex min-h-[60vh] justify-center">
+<div
+	class="text-brand-primary relative z-10 container mx-auto flex w-fit flex-col justify-center gap-6 text-4xl"
+>
+	<div class="flex h-fit w-fit flex-col gap-3">
+		<h1>The Team</h1>
+
+		<div class="flex gap-4 md:gap-10">
+			<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
+				<img src="/tregs.jpg" title="treggs" width={100} alt="ceo" class="rounded-xl" />
+				<p>Treggs, CEO</p>
+			</div>
+
+			<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
+				<img src="/spaceman.jpg" title="spaceman" width={100} alt="cto" class="rounded-xl" />
+				<p>SpacemanDev, CTO</p>
+			</div>
+		</div>
+
+		<button
+			class="group flex cursor-pointer items-center justify-center gap-2 rounded-xl bg-black px-2 py-1 text-sm transition-all hover:scale-110"
+		>
+			<IconMail className="group-hover:animate-pulse" width="25px" height="25px" />
+			<span> Get in touch </span>
+		</button>
+	</div>
+
 	<div
-		class="absolute bottom-0 z-20 font-black text-white opacity-25 transition-all hover:scale-110 hover:opacity-100"
+		class="z-20 font-black text-white opacity-25 transition-all hover:scale-110 hover:opacity-100"
 	>
 		<a href="https://x.com/MenaceFinance">
 			<span>@menace.finance</span>
 		</a>
 	</div>
-	<div
-		class="text-brand-primary absolute z-10 container grid h-full w-fit place-items-center text-4xl font-bold"
-	>
-		<div class="flex h-fit w-fit flex-col gap-3">
-			<div class="flex flex-col gap-2">
-				<h1>The Team</h1>
-			</div>
-			<div class="flex gap-4 md:gap-10">
-				<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
-					<HeroTiltCard src="/tregs.jpg" title="treggs" hideTitle />
-					<p>Treggs, CEO</p>
-				</div>
-
-				<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
-					<HeroTiltCard src="/spaceman.jpg" title="treggs" hideTitle />
-					<p>SpacemanDev, CTO</p>
-				</div>
-			</div>
-
-			<ButtonRainbow className="md:py-2 py-6 rounded-xl flex group">
-				<IconMail className="group-hover:animate-pulse" />
-				<span> Get in touch </span>
-			</ButtonRainbow>
-		</div>
-	</div>
-	<BgGrid />
 </div>
