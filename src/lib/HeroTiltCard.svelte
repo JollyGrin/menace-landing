@@ -17,7 +17,9 @@
 				glare: true,
 				transition: true,
 				gyroscope: true,
-				'max-glare': 0.5
+				reverse: true,
+				'max-glare': 0.5,
+				'full-page-listening': true
 			});
 		}
 	});
