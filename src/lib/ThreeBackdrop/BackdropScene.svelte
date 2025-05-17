@@ -145,9 +145,9 @@
 		const geometry = new THREE.BufferGeometry();
 		const positions = new Float32Array(reducedParticleCount * 3);
 
-		const separation = 100;
+		const separation = 80;
 		const amount = Math.sqrt(reducedParticleCount);
-		const offset = amount / 2;
+		const offset = amount / 1.5;
 
 		for (let i = 0; i < reducedParticleCount; i++) {
 			const x = (i % amount) * separation - offset * separation;
