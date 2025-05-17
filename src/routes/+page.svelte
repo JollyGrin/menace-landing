@@ -3,7 +3,7 @@
 	import Footer from './Footer.svelte';
 </script>
 
-<div class="relative mx-auto bg-black pb-10">
+<div class="to-brand-secondary relative mx-auto bg-gradient-to-t from-black via-black pb-10">
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
 </div>
