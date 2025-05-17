@@ -1,5 +1,4 @@
 <script lang="ts">
-	import AudioPlayer from '$lib/AudioPlayer.svelte';
 	import IconContract from '$lib/icon/IconContract.svelte';
 	import IconMoneyTransfer from '$lib/icon/IconMoneyTransfer.svelte';
 	import IconShield from '$lib/icon/IconShield.svelte';
@@ -9,15 +8,9 @@
 	import Product from './Product.svelte';
 </script>
 
-<div
-	class="to-brand-secondary via-brand-secondary relative mx-auto bg-gradient-to-t from-black pt-10 md:bg-gradient-to-b md:via-black"
->
+<div class=" relative mx-auto pt-10">
 	<Quote />
 	<img src="/logo.png" alt="logo" class="relative z-20 mx-auto w-[150px] md:w-[200px]" />
-
-	<div class="absolute bottom-0 z-0 h-[65vh] w-full opacity-50">
-		<BackdropCanvas />
-	</div>
 </div>
 
 <!-- <div class="to-brand-secondary h-5 bg-gradient-to-t from-black md:hidden"></div> -->

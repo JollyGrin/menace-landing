@@ -42,12 +42,12 @@
 			{description}
 		</p>
 
-		<Marquee>
-			{#each marqItems as item (item)}
-				<span class="text-brand-highlight">{item}</span>
-			{/each}
-		</Marquee>
-
+		<!-- <Marquee> -->
+		<!-- 	{#each marqItems as item (item)} -->
+		<!-- 		<span class="text-brand-highlight">{item}</span> -->
+		<!-- 	{/each} -->
+		<!-- </Marquee> -->
+		<!---->
 		{@render children()}
 	</div>
 </div>

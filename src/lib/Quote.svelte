@@ -68,7 +68,7 @@
 		content: '';
 		position: absolute;
 		width: 80px;
-		border: 2.5px solid #1a1a1a;
+		border: 2.5px solid var(--color-brand-secondary);
 		bottom: -3px;
 		left: 50px;
 		z-index: 2;
@@ -81,7 +81,7 @@
 			line-height: 1.2;
 		}
 		.blockquote h1:before {
-			border: 2.5px solid #000;
+			border: 2.5px solid var(--color-brand-secondary);
 		}
 	}
 
