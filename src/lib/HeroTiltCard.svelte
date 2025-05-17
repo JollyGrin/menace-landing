@@ -16,6 +16,7 @@
 				speed: 400,
 				glare: true,
 				transition: true,
+				gyroscope: true,
 				'max-glare': 0.5
 			});
 		}
