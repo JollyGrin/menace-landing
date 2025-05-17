@@ -21,7 +21,7 @@
 
 <!-- SEEDPLEX -->
 <div
-	class="text-brand-primary group relative isolate container min-h-[400px] max-w-[600px] overflow-hidden bg-black px-[20px] py-10 text-xl md:rounded-4xl md:py-12"
+	class="text-brand-primary group relative isolate container min-h-[400px] max-w-[600px] overflow-hidden bg-black px-[20px] py-10 text-xl md:rounded-4xl md:py-12 md:shadow-xl"
 >
 	<div
 		class="animate-float absolute top-1/4 left-1/4 h-32 w-32 rounded-full bg-blue-500/50 blur-3xl"
