@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Quote from '$lib/Quote.svelte';
+	import TextShadow from '$lib/TextShadow.svelte';
 	import Footer from './Footer.svelte';
 </script>
 
@@ -21,7 +22,11 @@
 			class="animate-float blue-tint absolute top-0 right-0 z-0 transition-all group-hover:translate-[-2rem]"
 		/>
 		<div class="relative z-10">
-			<h1 class="text-brand-highlight text-6xl">Seedplex</h1>
+			<TextShadow
+				text="Seedplex"
+				className="text-brand-highlight text-6xl font-bold"
+				shadowColor="var(--color-brand-highlight)"
+			/>
 			<p class="w-fit rounded-full px-1 backdrop-blur-sm">
 				Tokenizing the creation of private securities turns them into
 				<span class="">“money legos”</span>
@@ -48,7 +53,11 @@
 			class="animate-float blue-tint absolute top-20 right-0 z-0 w-[220px] transition-all group-hover:translate-[-2rem] md:w-[250px]"
 		/>
 		<div class="relative z-10">
-			<h1 class="text-brand-highlight text-6xl font-bold">Blockmarkets</h1>
+			<TextShadow
+				text="Blockmarkets"
+				className="text-brand-highlight text-6xl font-bold"
+				shadowColor="var(--color-brand-highlight)"
+			/>
 
 			<p class="w-fit rounded-full px-1 backdrop-blur-sm">Financial integrations for all tokens.</p>
 			<p class="mt-6">Styles of trading available</p>

@@ -1,11 +1,17 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import TextShadow from './TextShadow.svelte';
+</script>
 
 <div class="blockquote-wrapper">
 	<div class="blockquote">
 		<h1 class="text-[1.75rem] tracking-tight md:text-[2rem] md:tracking-normal">
-			We don’t want to change. Every change is a <span
-				class="text-brand-highlight font-black tracking-wide">menace</span
-			> to stability. That’s another reason why we’re scared to apply new inventions.
+			We don’t want to change. Every change is a
+			<TextShadow
+				text="menace"
+				className="text-brand-highlight font-black tracking-wide"
+				shadowColor="var(--color-brand-highlight)"
+			/>
+			to stability. That’s another reason why we’re scared to apply new inventions.
 		</h1>
 		<h4 class="text-brand-highlight">&mdash;Aldous Huxley<br /><em>Brave New World</em></h4>
 	</div>
