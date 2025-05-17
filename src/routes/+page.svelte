@@ -19,7 +19,7 @@
 	</div>
 </div>
 
-<div class="to-brand-secondary h-30 bg-gradient-to-t from-black md:hidden"></div>
+<div class="to-brand-secondary h-14 bg-gradient-to-t from-black md:hidden"></div>
 
 <div
 	class="container mx-auto flex flex-col flex-wrap items-center justify-center md:mt-10 md:gap-10 md:px-0 md:pb-10 xl:flex-row"
@@ -36,14 +36,14 @@
 				<IconShield
 					width="20px"
 					height="20px"
-					className="bg-brand-highlight/80 mt-1 md:mt-0 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
+					className="bg-brand-highlight/80 mt-1 md:mt-0 mx-2 rounded border-brand-highlight/30 border-2 group-hover:bg-brand-highlight transition-all"
 				/> Investor protections with DeFi compatibility
 			</span>
 			<span class="inline-flex items-start md:items-center">
 				<IconMoneyTransfer
 					width="20px"
 					height="20px"
-					className="bg-brand-highlight/80 mt-1 md:mt-0 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
+					className="bg-brand-highlight/80 mt-1 md:mt-0 mx-2 rounded border-brand-highlight/30 border-2 group-hover:bg-brand-highlight transition-all"
 				/> Reduced friction for private securities transfers
 			</span>
 
@@ -51,7 +51,7 @@
 				<IconContract
 					width="20px"
 					height="20px"
-					className="bg-brand-highlight/80 mt-1 md:mt-0 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
+					className="bg-brand-highlight/80 mt-1 md:mt-0 mx-2 rounded border-brand-highlight/30 border-2 group-hover:bg-brand-highlight transition-all"
 				/> Startup equity as collateral for bond offerings
 			</span>
 		</div>
@@ -100,7 +100,7 @@
 
 {#snippet numberDot(value: string | number)}
 	<div
-		class="bg-brand-highlight/80 group-hover:bg-brand-highlight relative mx-2 mt-1 grid h-5 w-10 place-items-center rounded-full border-2 border-white/20 text-xs font-bold md:mt-0 md:w-5"
+		class="bg-brand-highlight/80 group-hover:bg-brand-highlight border-brand-highlight/20 relative mx-2 mt-1 grid h-5 w-10 place-items-center rounded-full border-2 text-xs font-bold md:mt-0 md:w-5"
 	>
 		<span class="absolute top-0">{value}</span>
 	</div>
