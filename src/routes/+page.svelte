@@ -3,6 +3,7 @@
 	import IconMoneyTransfer from '$lib/icon/IconMoneyTransfer.svelte';
 	import IconShield from '$lib/icon/IconShield.svelte';
 	import Quote from '$lib/Quote.svelte';
+	import BackdropCanvas from '$lib/ThreeBackdrop/BackdropCanvas.svelte';
 	import Footer from './Footer.svelte';
 	import Product from './Product.svelte';
 </script>
@@ -10,6 +11,10 @@
 <div class="to-brand-secondary relative mx-auto bg-gradient-to-t from-black via-black pb-10">
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
+
+	<div class="absolute bottom-0 h-[50vh] w-full">
+		<BackdropCanvas />
+	</div>
 </div>
 <div class="h-10 w-full bg-black md:h-20">
 	<div class="bg-brand-secondary h-full w-full rounded-t-full"></div>
