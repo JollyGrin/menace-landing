@@ -12,7 +12,7 @@
 <div class="flex flex-col xl:flex-row">
 	<!-- SEEDPLEX -->
 	<div
-		class="text-brand-primary group relative isolate container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-xl md:py-16"
+		class="text-brand-primary group relative isolate container mx-auto mt-6 max-w-[600px] overflow-hidden rounded-xl bg-black px-[20px] py-10 text-xl md:py-16"
 	>
 		<div class="absolute top-1/4 left-1/4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
 		<div class="absolute right-30 bottom-24 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
