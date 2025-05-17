@@ -26,7 +26,9 @@
 				</div>
 			</div>
 
-			<ButtonRainbow>Get in touch</ButtonRainbow>
+			<ButtonRainbow className="md:py-2 py-6 rounded-xl">
+				<span> Get in touch </span>
+			</ButtonRainbow>
 		</div>
 	</div>
 	<BgGrid />

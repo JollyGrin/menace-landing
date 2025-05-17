@@ -9,6 +9,7 @@
 </div>
 
 <div class="flex flex-col xl:flex-row">
+	<!-- SEEDPLEX -->
 	<div
 		class="text-brand-primary group relative isolate container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-xl md:py-16"
 	>
@@ -35,6 +36,7 @@
 		</div>
 	</div>
 
+	<!-- BLOCK MARKETS -->
 	<div
 		class="text-brand-primary group relative isolate container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-xl md:py-16"
 	>
