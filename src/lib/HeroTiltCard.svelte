@@ -12,7 +12,7 @@
 	onMount(() => {
 		if (tiltRef) {
 			VanillaTilt.init(tiltRef, {
-				max: 25,
+				max: 35,
 				speed: 400,
 				glare: true,
 				transition: true,
@@ -23,10 +23,14 @@
 	});
 </script>
 
-<img
+<div
 	bind:this={tiltRef}
-	alt={title}
-	title={!hideTitle ? title : undefined}
-	{src}
-	class="my-3 w-24 rounded-xl shadow-md transition-all duration-500 select-none hover:scale-110 hover:shadow-amber-200/10 hover:saturate-150 active:scale-110 md:w-30"
-/>
+	class="group grid aspect-square place-items-center overflow-hidden rounded-xl"
+>
+	<img
+		alt={title}
+		title={!hideTitle ? title : undefined}
+		{src}
+		class="w-24 rounded-xl shadow-md transition-all duration-500 select-none group-hover:scale-110 group-hover:shadow-amber-200/10 hover:saturate-150 active:scale-110 md:w-30"
+	/>
+</div>

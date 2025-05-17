@@ -22,12 +22,12 @@
 				<h1>The Team</h1>
 			</div>
 			<div class="flex gap-4 md:gap-10">
-				<div class="text-lg font-normal">
+				<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
 					<HeroTiltCard src="/tregs.jpg" title="treggs" hideTitle />
 					<p>Treggs, CEO</p>
 				</div>
 
-				<div class="text-lg font-normal">
+				<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
 					<HeroTiltCard src="/spaceman.jpg" title="treggs" hideTitle />
 					<p>SpacemanDev, CTO</p>
 				</div>
