@@ -23,8 +23,12 @@
 <div
 	class="text-brand-primary group relative isolate container min-h-[400px] max-w-[600px] overflow-hidden bg-black px-[20px] py-10 text-xl md:rounded-4xl md:py-12"
 >
-	<div class="absolute top-1/4 left-1/4 h-32 w-32 rounded-full bg-blue-500/50 blur-3xl"></div>
-	<div class="absolute right-30 bottom-24 h-32 w-32 rounded-full bg-purple-500/50 blur-3xl"></div>
+	<div
+		class="animate-float absolute top-1/4 left-1/4 h-32 w-32 rounded-full bg-blue-500/50 blur-3xl"
+	></div>
+	<div
+		class="animate-float absolute right-30 bottom-24 h-32 w-32 rounded-full bg-purple-500/50 blur-3xl"
+	></div>
 	<img src={imgSrc} alt={title} class={imgClass} />
 	<div class="relative z-10">
 		<TextShadow

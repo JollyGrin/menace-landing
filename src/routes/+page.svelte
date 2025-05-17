@@ -20,7 +20,7 @@
 <div class="to-brand-secondary h-20 bg-gradient-to-t from-black md:hidden"></div>
 
 <div
-	class="container mx-auto flex flex-col flex-wrap items-center justify-center md:gap-10 md:px-0 md:pb-10 xl:flex-row"
+	class="container mx-auto flex flex-col flex-wrap items-center justify-center md:mt-10 md:gap-10 md:px-0 md:pb-10 xl:flex-row"
 >
 	<!-- SEEDPLEX -->
 	<Product
