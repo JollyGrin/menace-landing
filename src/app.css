@@ -3,7 +3,8 @@
 @theme {
 	--color-brand-primary: #fff;
 	--color-brand-secondary: #1e1e1e;
-	--color-brand-highlight: #008ece;
+	/* --color-brand-highlight: #008ece; */
+	--color-brand-highlight: var(--color-sky-500);
 	--color-brand-shadow: #fff;
 }
 
