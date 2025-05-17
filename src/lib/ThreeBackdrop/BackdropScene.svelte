@@ -4,14 +4,11 @@
 	import { OrbitControls } from '@threlte/extras';
 	import {
 		Fn,
-		If,
-		uniform,
 		float,
 		color,
 		uv,
 		vec2,
 		vec3,
-		hash,
 		sin,
 		time,
 		instancedArray,
@@ -28,7 +25,6 @@
 	let renderer: THREE.WebGLRenderer | any = $state(null);
 	let particleMaterial: any = $state(null);
 	let particles: THREE.Object3D | null = $state(null);
-	let rendererReady = $state(false);
 
 	// Get threlte context to access the renderer
 	const { renderer: threlteRenderer } = useThrelte();
@@ -37,7 +33,6 @@
 	$effect(() => {
 		if (threlteRenderer && !renderer) {
 			renderer = threlteRenderer as any; // Cast to any as it might be WebGPURenderer which isn't in the type definitions
-			rendererReady = true;
 			initComputations();
 		}
 	});
@@ -139,7 +134,7 @@
 
 		// Create a points material
 		const material = new THREE.PointsMaterial({
-			color: 0xffffff,
+			color: 0x008ece,
 			size: 5,
 			sizeAttenuation: true,
 			transparent: true,

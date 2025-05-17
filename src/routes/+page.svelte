@@ -11,7 +11,7 @@
 <div
 	class="to-brand-secondary relative mx-auto bg-gradient-to-b from-black/50 pb-10 md:from-black md:via-black"
 >
-	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
+	<img src="/logo.png" alt="logo" class="relative z-20 mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
 
 	<div class="absolute bottom-0 z-0 h-[65vh] w-full">
