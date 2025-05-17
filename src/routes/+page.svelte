@@ -17,7 +17,7 @@
 	<Quote />
 	<img src="/logo.png" alt="logo" class="relative z-20 mx-auto w-[150px] md:w-[200px]" />
 
-	<div class="absolute bottom-0 z-0 h-[65vh] w-full">
+	<div class="absolute bottom-0 z-0 h-[65vh] w-full opacity-50">
 		<BackdropCanvas />
 	</div>
 </div>
