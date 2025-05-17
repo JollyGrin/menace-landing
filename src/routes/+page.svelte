@@ -1,18 +1,51 @@
 <script lang="ts">
+	import IconContract from '$lib/icon/IconContract.svelte';
+	import IconMoneyTransfer from '$lib/icon/IconMoneyTransfer.svelte';
+	import IconShield from '$lib/icon/IconShield.svelte';
 	import Quote from '$lib/Quote.svelte';
 	import TextShadow from '$lib/TextShadow.svelte';
 	import Footer from './Footer.svelte';
 	import Product from './Product.svelte';
 </script>
 
-<div class="to-brand-secondary relative mx-auto bg-gradient-to-t from-black via-black pb-10">
+<div class="to-brand-secondary relative mx-auto bg-gradient-to-t from-black via-black pb-0">
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
 </div>
 
 <div class="flex flex-col xl:flex-row">
 	<!-- SEEDPLEX -->
-	<Product />
+	<Product
+		title="Seedplex"
+		imgSrc="/moneylego.png"
+		description="A launchpad that transforms securities into DeFi-compatible tokens, aligning founder fundraising with traditional capital investment."
+		marqItems={['pre-seed', 'seed equity', 'tranched debt', 'convertible debt']}
+	>
+		<div class="group mt-4 flex flex-col gap-2">
+			<span class="inline-flex items-center">
+				<IconShield
+					width="20px"
+					height="20px"
+					className="bg-brand-highlight/80 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
+				/> Investor protections with DeFi compatibility
+			</span>
+			<span class="inline-flex items-center">
+				<IconMoneyTransfer
+					width="20px"
+					height="20px"
+					className="bg-brand-highlight/80 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
+				/> Reduced friction for private securities transfers
+			</span>
+
+			<span class="inline-flex items-center">
+				<IconContract
+					width="20px"
+					height="20px"
+					className="bg-brand-highlight/80 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
+				/> Startup equity as collateral for bond offerings
+			</span>
+		</div>
+	</Product>
 
 	<!-- BLOCK MARKETS -->
 	<div
