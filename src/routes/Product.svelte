@@ -32,7 +32,7 @@
 			className="text-brand-highlight text-6xl font-bold xl:text-7xl"
 			shadowColor="var(--color-brand-highlight)"
 		/>
-		<p class="mb-4 min-h-[4rem] w-fit rounded-xl px-1 backdrop-blur-sm">
+		<p class="mb-4 min-h-[5.25rem] w-fit rounded-xl px-1 backdrop-blur-sm">
 			{description}
 		</p>
 
