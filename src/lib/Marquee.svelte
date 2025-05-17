@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class={cn(`marq-group group flex gap-[1rem] overflow-hidden ${$$restProps.class}`, {
+	class={cn(`marq-group group flex gap-[1rem] overflow-hidden`, {
 		'flex-row': direction === 'left',
 		'flex-col': direction !== 'left'
 	})}
