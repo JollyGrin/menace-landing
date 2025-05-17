@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="to-brand-secondary relative mx-auto bg-gradient-to-b from-black/50 pt-10 md:from-black md:via-black"
+	class="to-brand-secondary via-brand-secondary relative mx-auto bg-gradient-to-t from-black pt-10 md:bg-gradient-to-b md:via-black"
 >
 	<Quote />
 	<img src="/logo.png" alt="logo" class="relative z-20 mx-auto w-[150px] md:w-[200px]" />
@@ -19,7 +19,7 @@
 	</div>
 </div>
 
-<div class="to-brand-secondary h-14 bg-gradient-to-t from-black md:hidden"></div>
+<!-- <div class="to-brand-secondary h-5 bg-gradient-to-t from-black md:hidden"></div> -->
 
 <div
 	class="container mx-auto flex flex-col flex-wrap items-center justify-center md:mt-0 md:gap-10 md:px-0 md:pb-10 xl:flex-row"

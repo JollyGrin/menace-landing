@@ -20,7 +20,7 @@
 
 	const particleCount = 100;
 	// Animation speed multiplier - lower values = slower animation
-	const animationSpeed = 0.2;
+	const animationSpeed = 0.3;
 	let computeParticles: any = $state(null);
 	let renderer: THREE.WebGLRenderer | any = $state(null);
 	let particleMaterial: any = $state(null);

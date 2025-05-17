@@ -15,7 +15,7 @@
 			<div class="h-5"></div>
 			That’s why we’re scared to apply new inventions.
 		</h1>
-		<h4 class="text-brand-highlight">&mdash;Aldous Huxley<br /><em>Brave New World</em></h4>
+		<h4 class="text-brand-highlight/30">&mdash;Aldous Huxley<br /><em>Brave New World</em></h4>
 	</div>
 </div>
 
@@ -45,7 +45,7 @@
 		margin: 0;
 		border: 2px solid #fff;
 		border: solid 2px;
-		border-radius: 20px;
+		border-radius: 30px;
 		padding: 25px;
 	}
 
@@ -68,7 +68,7 @@
 		content: '';
 		position: absolute;
 		width: 80px;
-		border: 6px solid #0b0b0b;
+		border: 2.5px solid #1a1a1a;
 		bottom: -3px;
 		left: 50px;
 		z-index: 2;
@@ -79,6 +79,9 @@
 		.blockquote h1 {
 			font-size: 3rem;
 			line-height: 1.2;
+		}
+		.blockquote h1:before {
+			border: 2.5px solid #000;
 		}
 	}
 
