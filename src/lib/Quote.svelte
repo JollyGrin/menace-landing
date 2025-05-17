@@ -2,7 +2,7 @@
 	import TextShadow from './TextShadow.svelte';
 </script>
 
-<div class="blockquote-wrapper">
+<div class="blockquote-wrapper relative z-20">
 	<div class="blockquote">
 		<h1 class="text-[1.75rem] tracking-tight md:text-[2rem] md:tracking-normal">
 			We don’t want to change. Every change is a
