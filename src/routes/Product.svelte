@@ -33,7 +33,7 @@
 	<div class="relative z-10">
 		<TextShadow
 			text={title}
-			className="text-brand-highlight text-5xl font-bold xl:text-7xl"
+			className="text-brand-highlight text-[3.25rem] font-bold xl:text-7xl"
 			shadowColor="var(--color-brand-highlight)"
 		/>
 		<p class="mb-4 min-h-[5.25rem] w-fit rounded-xl px-1 backdrop-blur-sm">

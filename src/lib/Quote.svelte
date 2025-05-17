@@ -11,7 +11,9 @@
 				className="text-brand-highlight font-black tracking-wide"
 				shadowColor="var(--color-brand-highlight)"
 			/>
-			to stability. That’s another reason why we’re scared to apply new inventions.
+			to stability.
+			<div class="h-5"></div>
+			That’s why we’re scared to apply new inventions.
 		</h1>
 		<h4 class="text-brand-highlight">&mdash;Aldous Huxley<br /><em>Brave New World</em></h4>
 	</div>
@@ -38,7 +40,7 @@
 		/* font-family: 'Abril Fatface', cursive; */
 		position: relative; /* for pseudos */
 		color: var(--color-brand-primary);
-		font-weight: 100;
+		font-weight: 300;
 		line-height: 1;
 		margin: 0;
 		border: 2px solid #fff;
