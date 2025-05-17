@@ -1,4 +1,5 @@
 <script lang="ts">
+	import AudioPlayer from '$lib/AudioPlayer.svelte';
 	import IconContract from '$lib/icon/IconContract.svelte';
 	import IconMoneyTransfer from '$lib/icon/IconMoneyTransfer.svelte';
 	import IconShield from '$lib/icon/IconShield.svelte';
@@ -7,6 +8,8 @@
 	import Footer from './Footer.svelte';
 	import Product from './Product.svelte';
 </script>
+
+<AudioPlayer />
 
 <div
 	class="to-brand-secondary via-brand-secondary relative mx-auto bg-gradient-to-t from-black pt-10 md:bg-gradient-to-b md:via-black"
