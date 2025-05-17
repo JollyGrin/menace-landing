@@ -3,17 +3,21 @@
 	import IconMoneyTransfer from '$lib/icon/IconMoneyTransfer.svelte';
 	import IconShield from '$lib/icon/IconShield.svelte';
 	import Quote from '$lib/Quote.svelte';
-	import TextShadow from '$lib/TextShadow.svelte';
 	import Footer from './Footer.svelte';
 	import Product from './Product.svelte';
 </script>
 
-<div class="to-brand-secondary relative mx-auto bg-gradient-to-t from-black via-black pb-0">
+<div class="to-brand-secondary relative mx-auto bg-gradient-to-t from-black via-black pb-10">
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
 </div>
+<div class="h-10 w-full bg-black md:h-20">
+	<div class="bg-brand-secondary h-full w-full rounded-t-full"></div>
+</div>
 
-<div class="flex flex-col xl:flex-row">
+<div
+	class="container mx-auto flex flex-col flex-wrap items-center justify-center gap-10 px-2 pb-10 md:px-0 xl:flex-row"
+>
 	<!-- SEEDPLEX -->
 	<Product
 		title="Seedplex"
@@ -48,38 +52,51 @@
 	</Product>
 
 	<!-- BLOCK MARKETS -->
-	<div
-		class="text-brand-primary group relative isolate container mx-auto max-w-[600px] overflow-hidden px-[20px] py-10 text-xl md:py-16"
-	>
-		<div class="absolute top-1/4 right-1/4 h-32 w-32 rounded-full bg-blue-500/20 blur-3xl"></div>
-		<div class="absolute bottom-24 left-30 h-32 w-32 rounded-full bg-purple-500/20 blur-3xl"></div>
-		<img
-			src="/case.png"
-			alt="money lego"
-			class="animate-float blue-tint absolute top-20 right-0 z-0 w-[220px] transition-all group-hover:translate-[-2rem] md:w-[250px]"
-		/>
-		<div class="relative z-10">
-			<TextShadow
-				text="Blockmarkets"
-				className="text-brand-highlight text-6xl font-bold"
-				shadowColor="var(--color-brand-highlight)"
-			/>
 
-			<p class="w-fit rounded-full px-1 backdrop-blur-sm">Financial integrations for all tokens.</p>
-			<p class="mt-6">Styles of trading available</p>
-			<div class="mt-2 flex flex-wrap gap-2">
-				{#each ['OTC', 'DCA', 'Borrow/Lend', 'Proprietary Algorithmic'] as seed (seed)}
-					<div class="rounded-xl bg-black px-4 py-[4px]">{seed}</div>
-				{/each}
-			</div>
+	<Product
+		title="BlockMarkets"
+		description="Decentralized, permissionless block trades on-chain."
+		imgSrc="/case.png"
+		imgClass="animate-float blue-tint absolute top-20 right-0 z-0 w-[220px] transition-all group-hover:translate-[-2rem] md:w-[250px]"
+		marqItems={['OTC', 'DCA', 'Borrow/Lend', 'Proprietary Algorithmic']}
+	>
+		<div class="group mt-4 flex w-fit flex-col gap-2 rounded pr-2 backdrop-blur-sm">
+			<span class="inline-flex items-center">
+				{@render numberDot(1)}
+				Sellers list a block → buyers place bids while sale is live
+			</span>
+
+			<span class="inline-flex items-center">
+				{@render numberDot(2)}
+				Settlement price = time-weighted average during sale
+			</span>
+
+			<span class="inline-flex items-center">
+				{@render numberDot(3)}
+				Tokens distributed pro-rata to contributors
+			</span>
 		</div>
-	</div>
+	</Product>
 </div>
 
-<Footer />
+<div class="relative">
+	<Footer />
+
+	<div
+		class="to-brand-secondary absolute bottom-[-10rem] z-0 h-[54vh] w-full bg-gradient-to-t from-black"
+	></div>
+</div>
 
 <!-- <div class="h-4"></div> -->
 <!-- <MarqueeSection /> -->
+
+{#snippet numberDot(value: string | number)}
+	<div
+		class="bg-brand-highlight relative mx-2 grid h-5 w-5 place-items-center rounded-full border-2 border-white/20 text-xs font-bold"
+	>
+		<span class="absolute">{value}</span>
+	</div>
+{/snippet}
 
 <style>
 	img.blue-tint {
