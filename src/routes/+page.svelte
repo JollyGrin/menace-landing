@@ -8,7 +8,9 @@
 	import Product from './Product.svelte';
 </script>
 
-<div class="to-brand-secondary relative mx-auto bg-gradient-to-b from-black via-black pb-10">
+<div
+	class="to-brand-secondary relative mx-auto bg-gradient-to-b from-black/50 pb-10 md:from-black md:via-black"
+>
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
 
@@ -17,7 +19,7 @@
 	</div>
 </div>
 
-<div class="to-brand-secondary h-20 bg-gradient-to-t from-black md:hidden"></div>
+<div class="to-brand-secondary h-30 bg-gradient-to-t from-black md:hidden"></div>
 
 <div
 	class="container mx-auto flex flex-col flex-wrap items-center justify-center md:mt-10 md:gap-10 md:px-0 md:pb-10 xl:flex-row"
@@ -30,26 +32,26 @@
 		marqItems={['pre-seed', 'seed equity', 'tranched debt', 'convertible debt']}
 	>
 		<div class="group mt-4 flex flex-col gap-2">
-			<span class="inline-flex items-center">
+			<span class="inline-flex items-start md:items-center">
 				<IconShield
 					width="20px"
 					height="20px"
-					className="bg-brand-highlight/80 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
+					className="bg-brand-highlight/80 mt-1 md:mt-0 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
 				/> Investor protections with DeFi compatibility
 			</span>
-			<span class="inline-flex items-center">
+			<span class="inline-flex items-start md:items-center">
 				<IconMoneyTransfer
 					width="20px"
 					height="20px"
-					className="bg-brand-highlight/80 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
+					className="bg-brand-highlight/80 mt-1 md:mt-0 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
 				/> Reduced friction for private securities transfers
 			</span>
 
-			<span class="inline-flex items-center">
+			<span class="inline-flex items-start md:items-center">
 				<IconContract
 					width="20px"
 					height="20px"
-					className="bg-brand-highlight/80 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
+					className="bg-brand-highlight/80 mt-1 md:mt-0 mx-2 rounded border-white/10 border-2 group-hover:bg-brand-highlight transition-all"
 				/> Startup equity as collateral for bond offerings
 			</span>
 		</div>
@@ -65,17 +67,17 @@
 		marqItems={['OTC', 'DCA', 'Borrow/Lend', 'Proprietary Algorithmic']}
 	>
 		<div class="group mt-4 flex w-fit flex-col gap-2 rounded pr-2 backdrop-blur-sm">
-			<span class="inline-flex items-center">
+			<span class="inline-flex items-start md:items-center">
 				{@render numberDot(1)}
 				Sellers list a block → buyers place bids while sale is live
 			</span>
 
-			<span class="inline-flex items-center">
+			<span class="inline-flex items-start md:items-center">
 				{@render numberDot(2)}
 				Settlement price = time-weighted average during sale
 			</span>
 
-			<span class="inline-flex items-center">
+			<span class="inline-flex items-start md:items-center">
 				{@render numberDot(3)}
 				Tokens distributed pro-rata to contributors
 			</span>
@@ -98,9 +100,9 @@
 
 {#snippet numberDot(value: string | number)}
 	<div
-		class="bg-brand-highlight relative mx-2 grid h-5 w-5 place-items-center rounded-full border-2 border-white/20 text-xs font-bold"
+		class="bg-brand-highlight/80 group-hover:bg-brand-highlight relative mx-2 mt-1 grid h-5 w-10 place-items-center rounded-full border-2 border-white/20 text-xs font-bold md:mt-0 md:w-5"
 	>
-		<span class="absolute">{value}</span>
+		<span class="absolute top-0">{value}</span>
 	</div>
 {/snippet}
 
