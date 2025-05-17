@@ -66,7 +66,7 @@
 		content: '';
 		position: absolute;
 		width: 80px;
-		border: 6px solid black;
+		border: 6px solid #0b0b0b;
 		bottom: -3px;
 		left: 50px;
 		z-index: 2;

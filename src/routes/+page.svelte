@@ -8,7 +8,7 @@
 	import Product from './Product.svelte';
 </script>
 
-<div class="to-brand-secondary relative mx-auto bg-gradient-to-t from-black via-black pb-10">
+<div class="to-brand-secondary relative mx-auto bg-gradient-to-b from-black via-black pb-10">
 	<img src="/logo.png" alt="logo" class="mx-auto w-[150px] md:w-[200px]" />
 	<Quote />
 
@@ -16,12 +16,11 @@
 		<BackdropCanvas />
 	</div>
 </div>
-<div class="h-10 w-full bg-black md:h-20">
-	<div class="bg-brand-secondary h-full w-full rounded-t-full"></div>
-</div>
+
+<div class="to-brand-secondary h-20 bg-gradient-to-t from-black md:hidden"></div>
 
 <div
-	class="container mx-auto flex flex-col flex-wrap items-center justify-center gap-10 px-2 pb-10 md:px-0 xl:flex-row"
+	class="container mx-auto flex flex-col flex-wrap items-center justify-center md:gap-10 md:px-0 md:pb-10 xl:flex-row"
 >
 	<!-- SEEDPLEX -->
 	<Product
@@ -83,6 +82,8 @@
 		</div>
 	</Product>
 </div>
+
+<div class="to-brand-secondary h-20 bg-gradient-to-b from-black md:hidden"></div>
 
 <div class="relative">
 	<Footer />
