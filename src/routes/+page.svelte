@@ -9,8 +9,6 @@
 	import Product from './Product.svelte';
 </script>
 
-<AudioPlayer />
-
 <div
 	class="to-brand-secondary via-brand-secondary relative mx-auto bg-gradient-to-t from-black pt-10 md:bg-gradient-to-b md:via-black"
 >
