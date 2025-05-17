@@ -3,36 +3,32 @@
 </script>
 
 <div
-	class="text-brand-primary relative z-10 container mx-auto flex w-fit flex-col justify-center gap-6 text-4xl"
+	class="text-brand-primary relative z-10 container mx-auto flex max-w-[600px] flex-col justify-center gap-6 text-4xl"
 >
-	<div class="flex h-fit w-fit flex-col gap-3">
-		<h1>The Team</h1>
-
-		<div class="flex gap-4 md:gap-10">
-			<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
-				<img src="/tregs.jpg" title="treggs" width={100} alt="ceo" class="rounded-xl" />
-				<p>Treggs, CEO</p>
-			</div>
-
-			<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
-				<img src="/spaceman.jpg" title="spaceman" width={100} alt="cto" class="rounded-xl" />
-				<p>SpacemanDev, CTO</p>
-			</div>
+	<div class="flex gap-4 md:gap-10">
+		<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
+			<img src="/logo.png" title="treggs" width={120} alt="ceo" class="rounded-xl" />
 		</div>
 
-		<button
-			class="group flex cursor-pointer items-center justify-center gap-2 rounded-xl bg-black px-2 py-1 text-sm transition-all hover:scale-110"
-		>
-			<IconMail className="group-hover:animate-pulse" width="25px" height="25px" />
-			<span> Get in touch </span>
-		</button>
+		<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
+			<img src="/tregs.jpg" title="treggs" width={100} alt="ceo" class="rounded-xl" />
+			<p>Treggs, CEO</p>
+		</div>
+
+		<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
+			<img src="/spaceman.jpg" title="spaceman" width={100} alt="cto" class="rounded-xl" />
+			<p>SpacemanDev, CTO</p>
+		</div>
 	</div>
 
-	<div
-		class="z-20 font-black text-white opacity-25 transition-all hover:scale-110 hover:opacity-100"
+	<button
+		class="group flex cursor-pointer items-center justify-center gap-2 rounded-xl bg-black px-2 py-1 text-sm transition-all hover:scale-110"
 	>
-		<a href="https://x.com/MenaceFinance">
-			<span>@menace.finance</span>
-		</a>
-	</div>
+		<IconMail className="group-hover:animate-pulse" width="25px" height="25px" />
+		<span> Get in touch </span>
+	</button>
+
+	<a href="https://x.com/MenaceFinance">
+		<span>@menace.finance</span>
+	</a>
 </div>
