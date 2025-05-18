@@ -10,7 +10,7 @@
 </div>
 <div class="mx-auto max-w-[600px]">
 	<div
-		class="border-brand-highlight text-brand-primary flex min-h-[30vh] flex-col gap-16 border-l-3 border-dashed py-10 pl-2"
+		class="border-brand-highlight text-brand-primary flex min-h-[30vh] flex-col gap-16 border-l-3 border-dashed px-4 py-10 md:pr-0 md:pl-6"
 	>
 		<!-- START: ASSEMBLY -->
 		<div>
@@ -32,7 +32,7 @@
 
 		<div>
 			<h1>Superpowered Securities</h1>
-			<div class="grid grid-cols-2 gap-4">
+			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 				<!-- START: SUPERPOWERS -->
 				<div class="superpower">
 					<IconShield width="30px" height="30px" className="shrink-0" />
@@ -130,7 +130,7 @@
 
 	.customer-types {
 		> div {
-			background-color: var(--color-brand-highlight);
+			/* background-color: var(--color-brand-highlight); */
 			border-radius: 0.25rem;
 			padding: 0.25rem 0.25rem;
 
