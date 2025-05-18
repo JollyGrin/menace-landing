@@ -5,12 +5,12 @@
 </script>
 
 <img src="/logo.png" alt="logo" class="relative z-20 mx-auto w-[125px] md:w-[150px]" />
-<div class="border-brand-highlight border-t-3 border-b-3 border-dashed bg-black py-4">
+<div class="border-brand-highlight border-t-3 border-b-3 bg-black py-4">
 	<Quote />
 </div>
 <div class="mx-auto max-w-[600px]">
 	<div
-		class="border-brand-highlight text-brand-primary flex min-h-[30vh] flex-col gap-16 border-l-3 border-dashed px-4 py-10 md:pr-0 md:pl-6"
+		class="border-brand-highlight text-brand-primary flex min-h-[30vh] flex-col gap-16 border-l-3 px-4 py-10 md:pr-0 md:pl-6"
 	>
 		<!-- START: ASSEMBLY -->
 		<div>
@@ -116,7 +116,7 @@
 </div>
 
 <div
-	class="border-brand-highlight relative grid place-items-center border-t-3 border-b-3 border-dashed bg-black py-4"
+	class="border-brand-highlight relative grid place-items-center border-t-3 border-b-3 bg-black py-4"
 >
 	<Footer />
 </div>

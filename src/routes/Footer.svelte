@@ -13,7 +13,7 @@
 
 		<div class="flex flex-col items-center justify-center text-center text-lg font-normal">
 			<img src="/spaceman.jpg" title="spaceman" width={100} alt="cto" class="rounded-xl" />
-			<p>SpacemanDev, CTO</p>
+			<p>Spacemandev, CTO</p>
 		</div>
 	</div>
 
