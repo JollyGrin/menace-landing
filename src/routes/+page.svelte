@@ -81,7 +81,7 @@
 
 		<div>
 			<h1>Trade on Block Markets</h1>
-			<div class="customer-types grid grid-cols-2 gap-4">
+			<div class="customer-types grid grid-cols-1 gap-4 md:grid-cols-2">
 				<div>
 					<h2>Retail Sellers</h2>
 					<span>
@@ -126,6 +126,7 @@
 		color: var(--color-brand-highlight);
 		font-weight: 700;
 		font-size: var(--text-4xl);
+		line-height: var(--text-4xl);
 	}
 
 	.customer-types {
@@ -162,8 +163,5 @@
 			font-size: var(--text-xs);
 			line-height: var(--text-md);
 		}
-	}
-
-	h2 {
 	}
 </style>
