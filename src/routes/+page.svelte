@@ -1,8 +1,26 @@
 <script lang="ts">
 	import IconShield from '$lib/icon/IconShield.svelte';
 	import Quote from '$lib/Quote.svelte';
+	import {
+		BanknoteIcon,
+		CandlestickChartIcon,
+		DoorOpenIcon,
+		LandmarkIcon,
+		RocketIcon,
+		ShieldUserIcon,
+		SproutIcon,
+		TagsIcon
+	} from '@lucide/svelte';
 	import Footer from './Footer.svelte';
 </script>
+
+{#snippet iconWrapper(Icon: any)}
+	<div
+		class="bg-brand-highlight border-brand-secondary top-[0.15rem] left-[-3.35rem] h-fit w-fit rounded-full p-2 md:absolute md:border-b-3"
+	>
+		<Icon />
+	</div>
+{/snippet}
 
 <img src="/logo.png" alt="logo" class="relative z-20 mx-auto w-[125px] md:w-[150px]" />
 <div class="border-brand-highlight border-t-3 border-b-3 bg-black py-4">
@@ -10,10 +28,11 @@
 </div>
 <div class="mx-auto max-w-[600px]">
 	<div
-		class="border-brand-highlight text-brand-primary flex min-h-[30vh] flex-col gap-16 border-l-3 px-4 py-10 md:pr-0 md:pl-6"
+		class="border-brand-highlight text-brand-primary flex min-h-[30vh] flex-col gap-16 border-l-3 px-4 py-10 md:pr-0 md:pl-8"
 	>
 		<!-- START: ASSEMBLY -->
-		<div>
+		<div class="relative">
+			{@render iconWrapper(TagsIcon)}
 			<h1>Types of security offerings</h1>
 			<ul>
 				<li>🚀 Pre-Seed / Seed Equity</li>
@@ -22,20 +41,27 @@
 			</ul>
 		</div>
 
-		<div>
-			<h1>Launch on Seedplex</h1>
+		<div class="relative">
+			{@render iconWrapper(RocketIcon)}
+
+			<div class="flex items-center gap-2">
+				<h1>Launch on Seedplex</h1>
+
+				<img src="/seedplex-icon.png" alt="block markets icon" class="h-10" />
+			</div>
 			<ul>
 				<li>🧱 Turning private securities into “money legos”</li>
 				<li>🏛️ Achieved using Reg D in the US</li>
 			</ul>
 		</div>
 
-		<div>
+		<div class="relative">
+			{@render iconWrapper(LandmarkIcon)}
 			<h1>Superpowered Securities</h1>
-			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+			<div class="grid grid-cols-1 gap-4 md:mt-3 md:grid-cols-2">
 				<!-- START: SUPERPOWERS -->
 				<div class="superpower">
-					<IconShield width="30px" height="30px" className="shrink-0" />
+					<BanknoteIcon class="shrink-0" />
 					<div>
 						<h2>Securities as Collateral</h2>
 						<span>Use STOs as "money legos" in DeFi</span>
@@ -43,7 +69,7 @@
 				</div>
 
 				<div class="superpower">
-					<IconShield width="30px" height="30px" />
+					<SproutIcon class="shrink-0" />
 					<div>
 						<h2>Yield bearing assets</h2>
 						<span
@@ -54,7 +80,7 @@
 				</div>
 
 				<div class="superpower">
-					<IconShield width="30px" height="30px" />
+					<DoorOpenIcon class="shrink-0" />
 					<div>
 						<h2>Exit Potential</h2>
 						<span>
@@ -65,7 +91,7 @@
 				</div>
 
 				<div class="superpower">
-					<IconShield width="30px" height="30px" />
+					<ShieldUserIcon class="shrink-0" />
 					<div>
 						<h2>Investor Protection</h2>
 						<span>
@@ -79,8 +105,12 @@
 			</div>
 		</div>
 
-		<div>
-			<h1>Trade on Block Markets</h1>
+		<div class="relative">
+			{@render iconWrapper(CandlestickChartIcon)}
+			<div class="flex items-center gap-2">
+				<h1>Trade on Block Markets</h1>
+				<img src="/blockmarkets-icon.png" alt="block markets icon" class="h-10" />
+			</div>
 			<div class="customer-types grid grid-cols-1 gap-4 md:grid-cols-2">
 				<div>
 					<h2>Retail Sellers</h2>
