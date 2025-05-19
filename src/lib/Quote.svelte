@@ -15,7 +15,7 @@
 			<div class="h-5"></div>
 			That’s why we’re scared to apply new inventions.
 		</h1>
-		<h4 class="text-brand-highlight/30">&mdash;Aldous Huxley<br /><em>Brave New World</em></h4>
+		<h4 class="text-white/60">&mdash;Aldous Huxley<br /><em>Brave New World</em></h4>
 	</div>
 </div>
 
