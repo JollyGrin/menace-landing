@@ -19,6 +19,10 @@
 	import Footer from './Footer.svelte';
 </script>
 
+<svelte:head>
+	<title>Menace Finance</title>
+</svelte:head>
+
 {#snippet iconWrapper(Icon: any)}
 	<div
 		class="bg-brand-highlight border-brand-secondary top-[0.15rem] left-[-3.35rem] h-fit w-fit rounded-full p-2 md:absolute md:border-b-3"
