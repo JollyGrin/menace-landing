@@ -37,7 +37,7 @@
 </div>
 <div class="mx-auto max-w-[600px]">
 	<div
-		class="border-brand-highlight text-brand-primary ml-6 flex min-h-[30vh] flex-col gap-16 border-l-3 px-6 py-10 md:pr-0 md:pl-8"
+		class="border-brand-highlight text-brand-primary ml-6 flex min-h-[30vh] flex-col gap-8 border-l-3 px-6 py-10 md:pr-0 md:pl-8"
 	>
 		<!-- START: ASSEMBLY -->
 		<div class="relative">
