@@ -6,11 +6,15 @@
 		BeanIcon,
 		CandlestickChartIcon,
 		DoorOpenIcon,
+		EyeClosedIcon,
+		HandCoinsIcon,
 		HandHelpingIcon,
 		LandmarkIcon,
+		PiggyBankIcon,
 		RocketIcon,
 		ScrollTextIcon,
 		ShieldUserIcon,
+		ShoppingBasketIcon,
 		SproutIcon,
 		TagsIcon,
 		TelescopeIcon,
@@ -130,31 +134,44 @@
 			</div>
 			<div class="customer-types mt-2 grid grid-cols-1 gap-4 md:grid-cols-2">
 				<div>
-					<h2>Retail Sellers</h2>
-					<span>
-						Tapping OTC-style liquidity and open markets at the same time ensures optimal execution.
-					</span>
+					<ShoppingBasketIcon class="shrink-0" />
+					<div>
+						<h2>Retail Sellers</h2>
+						<span>
+							Tapping OTC-style liquidity and open markets at the same time ensures optimal
+							execution.
+						</span>
+					</div>
 				</div>
 
 				<div>
-					<h2>Professional Market Makers</h2>
-					<span>
-						Allows large buys into desired tokens at potential discounts with standard settlement
-						practices.
-					</span>
+					<HandCoinsIcon class="shrink-0" />
+					<div>
+						<h2>Professional Market Makers</h2>
+						<span>
+							Allows large buys into desired tokens at potential discounts with standard settlement
+							practices.
+						</span>
+					</div>
 				</div>
 
 				<div>
-					<h2>Treasury Managers</h2>
-					<span>
-						Enables native vesting, whitelisting, and fixed-price settlements for streamlined
-						treasury operations.
-					</span>
+					<PiggyBankIcon class="shrink-0" />
+					<div>
+						<h2>Treasury Managers</h2>
+						<span>
+							Enables native vesting, whitelisting, and fixed-price settlements for streamlined
+							treasury operations.
+						</span>
+					</div>
 				</div>
 
 				<div>
-					<h2>Privacy Minded Traders</h2>
-					<span> Supports dark-pool style trading for spot tokens on Solana via Arcium. </span>
+					<EyeClosedIcon class="shrink-0" />
+					<div>
+						<h2>Privacy Minded Traders</h2>
+						<span> Supports dark-pool style trading for spot tokens on Solana via Arcium. </span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -184,7 +201,9 @@
 		> div {
 			/* background-color: var(--color-brand-highlight); */
 			border-radius: 0.25rem;
-			padding: 0.25rem 0.25rem;
+			display: flex;
+			gap: 1rem;
+			align-items: start;
 
 			& h2 {
 				font-weight: 700;
