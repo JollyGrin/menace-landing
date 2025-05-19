@@ -3,13 +3,18 @@
 	import Quote from '$lib/Quote.svelte';
 	import {
 		BanknoteIcon,
+		BeanIcon,
 		CandlestickChartIcon,
 		DoorOpenIcon,
+		HandHelpingIcon,
 		LandmarkIcon,
 		RocketIcon,
+		ScrollTextIcon,
 		ShieldUserIcon,
 		SproutIcon,
-		TagsIcon
+		TagsIcon,
+		TelescopeIcon,
+		ToyBrickIcon
 	} from '@lucide/svelte';
 	import Footer from './Footer.svelte';
 </script>
@@ -34,10 +39,10 @@
 		<div class="relative">
 			{@render iconWrapper(TagsIcon)}
 			<h1>Types of security offerings</h1>
-			<ul>
-				<li>🚀 Pre-Seed / Seed Equity</li>
-				<li>💸 Debt Offerings</li>
-				<li>🧩 Exotic Financial Products</li>
+			<ul class="flex flex-col gap-2 md:mt-4">
+				<li><BeanIcon /> Pre-Seed / Seed Equity</li>
+				<li><HandHelpingIcon /> Debt Offerings</li>
+				<li><TelescopeIcon /> Exotic Financial Products</li>
 			</ul>
 		</div>
 
@@ -49,9 +54,9 @@
 
 				<img src="/seedplex-icon.png" alt="block markets icon" class="h-10" />
 			</div>
-			<ul>
-				<li>🧱 Turning private securities into “money legos”</li>
-				<li>🏛️ Achieved using Reg D in the US</li>
+			<ul class="flex flex-col gap-2 md:mt-4">
+				<li><ToyBrickIcon /> Turning private securities into “money legos”</li>
+				<li><ScrollTextIcon /> Achieved using Reg D in the US</li>
 			</ul>
 		</div>
 
@@ -152,6 +157,11 @@
 </div>
 
 <style>
+	li {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
 	h1 {
 		color: var(--color-brand-highlight);
 		font-weight: 700;
