@@ -172,7 +172,7 @@
 	li {
 		display: flex;
 		align-items: center;
-		gap: 0.25rem;
+		gap: 1rem;
 	}
 	h1 {
 		color: var(--color-brand-highlight);
