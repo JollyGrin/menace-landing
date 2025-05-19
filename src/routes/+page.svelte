@@ -25,7 +25,7 @@
 
 {#snippet iconWrapper(Icon: any)}
 	<div
-		class="bg-brand-highlight border-brand-secondary top-[0.15rem] left-[-3.35rem] h-fit w-fit rounded-full p-2 md:absolute md:border-b-3"
+		class="bg-brand-highlight border-brand-secondary absolute top-[-0.5rem] left-[-2.75rem] h-fit w-fit rounded-full border-b-3 p-2 md:left-[-3.35rem]"
 	>
 		<Icon />
 	</div>
@@ -37,13 +37,13 @@
 </div>
 <div class="mx-auto max-w-[600px]">
 	<div
-		class="border-brand-highlight text-brand-primary flex min-h-[30vh] flex-col gap-16 border-l-3 px-4 py-10 md:pr-0 md:pl-8"
+		class="border-brand-highlight text-brand-primary ml-6 flex min-h-[30vh] flex-col gap-16 border-l-3 px-6 py-10 md:pr-0 md:pl-8"
 	>
 		<!-- START: ASSEMBLY -->
 		<div class="relative">
 			{@render iconWrapper(TagsIcon)}
 			<h1>Types of security offerings</h1>
-			<ul class="flex flex-col gap-2 md:mt-4">
+			<ul class="mt-2 flex flex-col gap-2 md:mt-4">
 				<li><BeanIcon /> Pre-Seed / Seed Equity</li>
 				<li><HandHelpingIcon /> Debt Offerings</li>
 				<li><TelescopeIcon /> Exotic Financial Products</li>
@@ -53,13 +53,17 @@
 		<div class="relative">
 			{@render iconWrapper(RocketIcon)}
 
-			<div class="flex items-center gap-2">
+			<div class="relative flex w-fit items-center gap-2">
 				<h1>Launch on Seedplex</h1>
 
-				<img src="/seedplex-icon.png" alt="block markets icon" class="h-10" />
+				<img
+					src="/seedplex-icon.png"
+					alt="block markets icon"
+					class="absolute top-[-0.75rem] right-[-2rem] h-10"
+				/>
 			</div>
-			<ul class="flex flex-col gap-2 md:mt-4">
-				<li><ToyBrickIcon /> Turning private securities into “money legos”</li>
+			<ul class="mt-2 flex flex-col gap-2 md:mt-4">
+				<li><ToyBrickIcon /> Turn private securities into “money legos”</li>
 				<li><ScrollTextIcon /> Achieved using Reg D in the US</li>
 			</ul>
 		</div>
@@ -116,11 +120,15 @@
 
 		<div class="relative">
 			{@render iconWrapper(CandlestickChartIcon)}
-			<div class="flex items-center gap-2">
+			<div class="relative flex w-fit items-center gap-2">
 				<h1>Trade on Block Markets</h1>
-				<img src="/blockmarkets-icon.png" alt="block markets icon" class="h-10" />
+				<img
+					src="/blockmarkets-icon.png"
+					alt="block markets icon"
+					class="absolute top-[-0.75rem] right-[-3rem] h-10"
+				/>
 			</div>
-			<div class="customer-types grid grid-cols-1 gap-4 md:grid-cols-2">
+			<div class="customer-types mt-2 grid grid-cols-1 gap-4 md:grid-cols-2">
 				<div>
 					<h2>Retail Sellers</h2>
 					<span>
@@ -168,9 +176,8 @@
 	}
 	h1 {
 		color: var(--color-brand-highlight);
-		font-weight: 700;
-		font-size: var(--text-4xl);
-		line-height: var(--text-4xl);
+		font-size: 1.25rem;
+		line-height: 1.25rem;
 	}
 
 	.customer-types {
