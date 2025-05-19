@@ -17,12 +17,14 @@
 		</div>
 	</div>
 
-	<button
-		class="group bg-brand-highlight flex cursor-pointer items-center justify-center gap-2 rounded-xl px-20 py-1 text-sm transition-all hover:scale-110"
-	>
-		<IconMail className="group-hover:animate-pulse" width="25px" height="25px" />
-		<span> Get in touch </span>
-	</button>
+	<a href="mailto:team@seedplex.io">
+		<button
+			class="group bg-brand-highlight flex cursor-pointer items-center justify-center gap-2 rounded-xl px-20 py-1 text-sm transition-all hover:scale-110"
+		>
+			<IconMail className="group-hover:animate-pulse" width="25px" height="25px" />
+			<span> Get in touch </span>
+		</button>
+	</a>
 
 	<a href="https://x.com/MenaceFinance">
 		<span class="text-lg opacity-25 hover:opacity-100">@menace.finance</span>
