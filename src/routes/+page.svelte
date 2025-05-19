@@ -71,7 +71,7 @@
 		<div class="relative">
 			{@render iconWrapper(LandmarkIcon)}
 			<h1>Superpowered Securities</h1>
-			<div class="grid grid-cols-1 gap-4 md:mt-3 md:grid-cols-2">
+			<div class="mt-2 grid grid-cols-1 gap-4 md:mt-3 md:grid-cols-2">
 				<!-- START: SUPERPOWERS -->
 				<div class="superpower">
 					<BanknoteIcon class="shrink-0" />
