@@ -25,7 +25,7 @@
 
 {#snippet iconWrapper(Icon: any)}
 	<div
-		class="bg-brand-highlight border-brand-secondary absolute top-[-0.5rem] left-[-2.75rem] h-fit w-fit rounded-full border-b-3 p-2 md:left-[-3.35rem]"
+		class="bg-brand-highlight border-brand-secondary absolute top-[-0.5rem] left-[-2.8rem] h-fit w-fit rounded-full border-b-3 p-2 md:left-[-3.35rem]"
 	>
 		<Icon />
 	</div>
